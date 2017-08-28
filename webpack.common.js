@@ -8,10 +8,10 @@ module.exports = {
 		app: './src/js/index.js',
 	},
 	plugins: [
-		new CleanWebpackPlugin(['./dist']),
-		new HtmlWebpackPlugin({
-			title: 'Production'
-		}),
+		//new CleanWebpackPlugin(['./dist']),
+		// new HtmlWebpackPlugin({
+		// 	title: 'Perfect React'
+		// }),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
@@ -19,12 +19,19 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 	},
 	module: {
-		rules: [{
-			test: /\.css$/,
-			use: [
-				'style-loader',
-				'css-loader'
-			]
-		}]
+		rules: [
+			{
+				test: /\.css$/,
+				use: [
+					'style-loader',
+					'css-loader'
+				]
+			},
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: ["react-hot-loader", "babel-loader"]
+			}
+		]
 	}
 };
