@@ -1,12 +1,21 @@
 import React from "react";
 
+import {BrowserRouter as Router, Route, Link, NavLink, Switch} from 'react-router-dom';
+import Test from "./test";
+import Tester from "./tester";
+
 export default class App extends React.Component{
+	constructor(props) {
+		super(props);
+		
+		this.state = {
+
+		};
+	}
+
 	render(){
 		return (
-			<div>
-				<h3>Enter 123 dasas</h3>
-				<input value="lul"/>
-			</div>
+			<Test/>
 		);
 	}
 }
