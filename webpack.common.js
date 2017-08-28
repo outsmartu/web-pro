@@ -1,26 +1,18 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');//use for minified build
 
 module.exports = {
 	entry: {
 		app: './src/js/index.js',
 	},
-	devtool: 'inline-source-map',
-	devServer: {
-		contentBase: './dist',
-		port: 8000,
-		hot: true
-	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(['./dist']),
 		new HtmlWebpackPlugin({
-			title: 'Perfect React'
+			title: 'Production'
 		}),
-		//new UglifyJSPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
+		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
 		filename: '[name].bundle.js',
