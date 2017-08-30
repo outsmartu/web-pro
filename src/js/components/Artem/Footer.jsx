@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Test extends React.Component{
+export default class Header extends React.Component{
 	constructor(props) {
 		super(props);
 		
@@ -11,7 +11,10 @@ export default class Test extends React.Component{
 
 	render(){
 		return (
-			<h1>test</h1>
+			<div>
+				<h1>Footer</h1>
+			</div>
+			
 		);
 	}
 }

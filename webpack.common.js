@@ -28,7 +28,7 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				loader: ["react-hot-loader", "babel-loader"]
 			}
