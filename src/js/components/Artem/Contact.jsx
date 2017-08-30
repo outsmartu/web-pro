@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Tester extends React.Component{
+export default class Contact extends React.Component{
 	constructor(props) {
 		super(props);
 		
@@ -11,7 +11,10 @@ export default class Tester extends React.Component{
 
 	render(){
 		return (
-			<h1>Tester</h1>
+			<div>
+				<h1>Contact page</h1>
+			</div>
+			
 		);
 	}
 }
