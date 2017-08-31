@@ -74,6 +74,11 @@ export default class Calc extends React.Component{
 		return (
 			<div>
 				<Row>
+					<Col className="centered" md={12}>
+						<h2>Weight calculator</h2>
+					</Col>
+				</Row>
+				<Row>
 					<Col md={2} className="col-md-offset-2">
 						<h3>Metall</h3>
 						<FormGroup controlId="formControlsSelect">
