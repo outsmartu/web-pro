@@ -6,7 +6,7 @@
   "scripts": {
     "simple": "webpack --config webpack.common.js",
     "build": "webpack --content-base ./dist --inline --hot --config webpack.prod.js ",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "webpack-dev-server --open --config webpack.dev.js --public 192.168.100.7:8000"
   },
   "repository": {
     "type": "git",

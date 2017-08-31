@@ -21,14 +21,16 @@ export default class Header extends React.Component{
 		// console.log("list", list);
 		return (
 			<div>
-				<ul id="header-menu">
-				{
-					list.map((el, index) => {
-						return <li key={index}><Link to={`/${el == "Home" ? '' : el.toLowerCase()}`}>{el}</Link></li>
-					})
-				}
-				</ul>
-
+				
+				<nav className="one1">
+					<ul id="header-menu">
+					{
+						list.map((el, index) => {
+							return <li key={index}><Link to={`/${el == "Home" ? '' : el.toLowerCase()}`}>{el}</Link></li>
+						})
+					}
+					</ul>
+				</nav>
 				<hr/>
 			</div>
 			

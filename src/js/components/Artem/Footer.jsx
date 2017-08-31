@@ -11,8 +11,9 @@ export default class Footer extends React.Component{
 
 	render(){
 		return (
-			<div>
-				<h3>Footer</h3>
+			<div className="footer">
+				<hr/>
+				<h3>copyright information</h3>
 			</div>
 			
 		);

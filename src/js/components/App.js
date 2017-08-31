@@ -67,15 +67,15 @@ export default class App extends React.Component{
 	render(){
 		return (
 			<Router>
-				<div>
+				<div className="wrapper">
 					<Header/>	
-						
-
-						<Route exact path="/" component={Home}/>
-						<Route path="/about" component={About}/>
-						<Route path="/contact" component={Contact}/>
-						<Route path="/topics" component={Topics}/>
-            <Route path="/calc" component={Calc}/>
+            <div className="content">
+  						<Route exact path="/" component={Home}/>
+  						<Route path="/about" component={About}/>
+  						<Route path="/contact" component={Contact}/>
+  						<Route path="/topics" component={Topics}/>
+              <Route path="/calc" component={Calc}/>
+            </div>
 					<Footer/>
 				</div>
 			</Router>
