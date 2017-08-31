@@ -4,9 +4,9 @@
 	cd your-dir
 	npm install
 
-###For development:
+### For development:
 	npm start
 
-###For production:
+### For production:
 	npm run build
 
