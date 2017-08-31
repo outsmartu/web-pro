@@ -1,6 +1,7 @@
 import React from "react";
+import { Button } from 'react-bootstrap';
 
-export default class Footer extends React.Component{
+export default class Calc extends React.Component{
 	constructor(props) {
 		super(props);
 		
@@ -12,7 +13,8 @@ export default class Footer extends React.Component{
 	render(){
 		return (
 			<div>
-				<h3>Footer</h3>
+				<h3>Calc</h3>
+				<Button>Press it!</Button>
 			</div>
 			
 		);

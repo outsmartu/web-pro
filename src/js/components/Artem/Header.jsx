@@ -9,22 +9,24 @@ export default class Header extends React.Component{
 			list: [
 				"Home",
 				"About",
-				"Contact"
+				"Contact",
+				"Topics",
+				"Calc"
 			]
 		};
 	}
 
 	render(){
-		const {list} = this.state.list;
-		console.log(list);
+		const {list} = this.state;
+		// console.log("list", list);
 		return (
 			<div>
-				<h1>Header</h1>
-				<ul>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/about">About</Link></li>
-					<li><Link to="/contact">Contact</Link></li>
-					<li><Link to="/topics">Topics</Link></li>
+				<ul id="header-menu">
+				{
+					list.map((el, index) => {
+						return <li key={index}><Link to={`/${el == "Home" ? '' : el.toLowerCase()}`}>{el}</Link></li>
+					})
+				}
 				</ul>
 
 				<hr/>

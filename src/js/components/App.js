@@ -14,13 +14,8 @@ const Head = () => <h1>EZ</h1>;
 
 import Contact from "./Artem/Contact.jsx";
 import About from "./Artem/About.jsx";
-
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
-
+import Home from "./Artem/Home.jsx";
+import Calc from "./Artem/Calc.jsx";
 
 
 const Topic = ({ match }) => (
@@ -80,6 +75,7 @@ export default class App extends React.Component{
 						<Route path="/about" component={About}/>
 						<Route path="/contact" component={Contact}/>
 						<Route path="/topics" component={Topics}/>
+            <Route path="/calc" component={Calc}/>
 					<Footer/>
 				</div>
 			</Router>

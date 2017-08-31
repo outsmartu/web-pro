@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Footer extends React.Component{
+export default class Home extends React.Component{
 	constructor(props) {
 		super(props);
 		
@@ -12,7 +12,7 @@ export default class Footer extends React.Component{
 	render(){
 		return (
 			<div>
-				<h3>Footer</h3>
+				<h1>Home</h1>
 			</div>
 			
 		);
