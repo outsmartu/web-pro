@@ -1,4 +1,4 @@
-# Simple React boilerplate for beginners
+# Simple React+Redux Webpack boilerplate for beginners
 
 	git clone https://github.com/artembell/web-pro your-dir
 	cd your-dir
