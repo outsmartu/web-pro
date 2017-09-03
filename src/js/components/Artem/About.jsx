@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 class About extends React.Component{
 	constructor(props) {
 		super(props);
-		    console.log("About", this.props.testStore);
+		    console.log("About", this.props.tracks);
 		
 		this.state = {
 			trackName: ''
@@ -28,7 +28,7 @@ class About extends React.Component{
 
 	render(){
 
-		
+		console.log(this.props.tracks);
 
 		return (
 
@@ -36,11 +36,11 @@ class About extends React.Component{
 				<h1>About music</h1>
 				<input type="text" onChange={e => {this.onTrackChange(e)}}/>
 				<button onClick={() => this.addTrack()}>Add track</button>
-				<button onClick={() => {console.log(this.props.testStore)}}>get state</button>
+				<button onClick={() => {console.log(this.props.tracks)}}>get state</button>
 
 				<ul>
 					{
-						this.props.testStore.map((track, index) => {
+						this.props.tracks.map((track, index) => {
 							return <li key={index}>{track}</li>
 						})
 					}
@@ -53,7 +53,7 @@ class About extends React.Component{
 
 export default connect(
   state => ({
-    testStore: state
+    tracks: state.tracks
   }),
   dispatch => ({
   	onAddTrack: (track) => {
