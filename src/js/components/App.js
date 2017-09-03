@@ -7,7 +7,7 @@ import {connect} from "react-redux";
 
 
 import Contact from "./Artem/Contact.jsx";
-import Music from "./Artem/Music.jsx.jsx";
+import Music from "./Artem/Music.jsx";
 import Home from "./Artem/Home.jsx";
 import Calc from "./Artem/Calc.jsx";
 import MainLayout from "./Artem/MainLayout.jsx";
