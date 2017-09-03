@@ -31,15 +31,8 @@ export default class Header extends React.Component{
 		// console.log("list", list);
 		return (
 			<div>
-				<DropdownButton bsStyle="default" title="languages" id={`dropdown-basic`}>
-				{
-					languages.map((item, index) => {
-						return <MenuItem onClick={() => this.onLanguageChange(item)} key={index} eventKey={index}>{item}</MenuItem>
-					})
-				}
-			    </DropdownButton>
 				
-				<nav className="one1">
+				<nav id="menu1">
 					<ul id="header-menu">
 					{
 						list.map((el, index) => {
@@ -47,8 +40,8 @@ export default class Header extends React.Component{
 						})
 					}
 					</ul>
-				</nav>
-				<hr/>
+					
+					</nav>
 			</div>
 		);
 	}

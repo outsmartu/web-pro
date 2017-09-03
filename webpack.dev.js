@@ -10,7 +10,7 @@ module.exports = merge(common, {
 		port: 8000,
 		hot: true,
 		open: true,
-		historyApiFallback: true
+		historyApiFallback: true,//to avoid router 404 crash
         //disableHostCheck: true
 	}
 });
