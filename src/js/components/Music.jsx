@@ -1,10 +1,11 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getTracks} from "../../actions/tracks.js";
+import {getTracks} from "../actions/tracks.js";
 
 class About extends React.Component{
 	constructor(props) {
 		super(props);
+		console.log(this.props);
 		console.log("About", this.props.tracks);
 		
 		this.state = {

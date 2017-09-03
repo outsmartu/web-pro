@@ -1,16 +1,16 @@
 import React from "react";
 
-import Header from "./Artem/Header.jsx";
-import Footer from "./Artem/Footer.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {connect} from "react-redux";
 
 
-import Contact from "./Artem/Contact.jsx";
-import Music from "./Artem/Music.jsx";
-import Home from "./Artem/Home.jsx";
-import Calc from "./Artem/Calc.jsx";
-import MainLayout from "./Artem/MainLayout.jsx";
+import Contact from "./Contact.jsx";
+import Music from "./Music.jsx";
+import Home from "./Home.jsx";
+import Calc from "./Calc.jsx";
+import MainLayout from "./MainLayout.jsx";
 
 class App extends React.Component{
 	constructor(props) {
