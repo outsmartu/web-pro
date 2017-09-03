@@ -1,7 +1,9 @@
-import {combineReducers} from "react-redux";
+import { combineReducers } from "redux"
 
-import tracksReducer from "./tracks";
+import tracks from "./tracks.js";
+import playlists from "./playlists.js";
 
-export dafault combineReducers({
-	tracksReducer,
+export default combineReducers({
+	tracks,
+	playlists
 });

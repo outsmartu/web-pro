@@ -28,12 +28,12 @@ class About extends React.Component{
 
 	render(){
 
-		console.log(this.props.tracks);
+		//console.log(this.props.tracks);
 
 		return (
 
 			<div>
-				<h1>About music</h1>
+				<h1>About music!</h1>
 				<input type="text" onChange={e => {this.onTrackChange(e)}}/>
 				<button onClick={() => this.addTrack()}>Add track</button>
 				<button onClick={() => {console.log(this.props.tracks)}}>get state</button>

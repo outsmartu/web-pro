@@ -1,11 +1,11 @@
 
 const initialState = [
-	"Cola",
-	"Young and Beautiful"
+	"Night Visions",
+	"Smoke & Mirrors"
 ];
 
 export default function playlist(state = initialState, action){
-	if(action.type == "ADD_TRACK"){
+	if(action.type == "ADD_PLAYLIST"){
 		return [
 			...state,
 			action.value
