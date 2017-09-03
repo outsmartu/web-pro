@@ -9,7 +9,7 @@ export default class Header extends React.Component{
 		this.state = {
 			list: [
 				"Home",
-				"About",
+				"Music",
 				"Contact",
 				"Calc"
 			],
