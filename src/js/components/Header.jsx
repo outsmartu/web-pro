@@ -11,7 +11,8 @@ export default class Header extends React.Component{
 				"Home",
 				"Music",
 				"Contact",
-				"Calc"
+				"Calc",
+				"Lul"
 			],
 
 			languages: [

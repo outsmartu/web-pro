@@ -1,11 +1,12 @@
 import React from "react";
 import {connect} from "react-redux";
 import {getTracks} from "../actions/tracks.js";
+import {withRouter} from "react-router-dom";
 
 class About extends React.Component{
 	constructor(props) {
 		super(props);
-		console.log(this.props);
+		//console.log(this.props);
 		console.log("About", this.props.tracks);
 		
 		this.state = {
@@ -67,7 +68,7 @@ class About extends React.Component{
 	}
 }
 
-export default connect(
+export default withRouter(connect(
   state => ({
     tracks: state.tracks.filter(track => track.name.includes(state.findTrack))
   }),
@@ -86,4 +87,4 @@ export default connect(
   		dispatch(getTracks());
   	}
   })
-)(About);
+)(About));
