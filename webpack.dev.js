@@ -10,8 +10,6 @@ module.exports = merge(common, {
 		port: 8000,
 		hot: true,
 		open: true,
-		
-		host: '0.0.0.0',
         disableHostCheck: true
 	}
 });

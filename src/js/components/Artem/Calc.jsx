@@ -79,7 +79,7 @@ export default class Calc extends React.Component{
 					</Col>
 				</Row>
 				<Row>
-					<Col md={2} className="col-md-offset-2">
+					<Col md={2} /*className="col-md-offset-2"*/>
 						<h3>Metall</h3>
 						<FormGroup controlId="formControlsSelect">
 							<ControlLabel>Select</ControlLabel>

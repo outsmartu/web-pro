@@ -1,5 +1,6 @@
 import React from "react";
 import {Link } from "react-router-dom";
+import {DropdownButton, MenuItem} from "react-bootstrap";
 
 export default class Header extends React.Component{
 	constructor(props) {
@@ -10,17 +11,32 @@ export default class Header extends React.Component{
 				"Home",
 				"About",
 				"Contact",
-				"Topics",
 				"Calc"
+			],
+
+			languages: [
+				'ru',
+				'en',
 			]
 		};
 	}
 
+	onLanguageChange(lang){
+		console.log(lang);
+	}
+
 	render(){
-		const {list} = this.state;
+		const {list, languages} = this.state;
 		// console.log("list", list);
 		return (
 			<div>
+				<DropdownButton bsStyle="default" title="languages" id={`dropdown-basic`}>
+				{
+					languages.map((item, index) => {
+						return <MenuItem onClick={() => this.onLanguageChange(item)} key={index} eventKey={index}>{item}</MenuItem>
+					})
+				}
+			    </DropdownButton>
 				
 				<nav className="one1">
 					<ul id="header-menu">
@@ -33,7 +49,6 @@ export default class Header extends React.Component{
 				</nav>
 				<hr/>
 			</div>
-			
 		);
 	}
 }
